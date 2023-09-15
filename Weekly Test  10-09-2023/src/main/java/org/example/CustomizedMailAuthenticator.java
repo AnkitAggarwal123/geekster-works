@@ -8,7 +8,7 @@ public class CustomizedMailAuthenticator extends Authenticator {
     @Override
     protected PasswordAuthentication getPasswordAuthentication()
     {
-        return new PasswordAuthentication("kuldeepaggarwal305@gmail.com", "dusxhxnwaewlbyyj");
+        return new PasswordAuthentication("kuldeepaggarwal305@gmail.com", "osgbikjwsynrocjj");
 
     }
 }

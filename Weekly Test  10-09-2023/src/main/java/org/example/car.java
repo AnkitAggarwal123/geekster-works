@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 @Component
 public  class car {
 
-    private static String CarName;
+    private  String CarName;
 
     car(){
         this.CarName = "Rolls Royce Boat Tail";
@@ -14,9 +14,6 @@ public  class car {
         return CarName;
     }
 
-    public static String getcarname1(){
-        return CarName;
-    }
 
 
 

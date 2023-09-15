@@ -1,8 +1,6 @@
 package org.example;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.stereotype.Component;
 
 import javax.mail.Authenticator;
 import javax.mail.Message;
@@ -12,10 +10,9 @@ import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 import java.util.Properties;
 
-
 public class MailHandler {
 
-    public static void sendMail()
+    public static void sendMail(String carName)
     {
 
 
@@ -52,7 +49,7 @@ public class MailHandler {
             mailMessage.setFrom("kuldeepaggarwal305@gmailcom");
             mailMessage.setSubject("Geekster Test");
             mailMessage.setRecipient(Message.RecipientType.TO, new InternetAddress("kuldeepaggarwal305@gmail.com"));
-            mailMessage.setText(car.getcarname1());
+            mailMessage.setText(carName);
 
             Transport.send(mailMessage);
 

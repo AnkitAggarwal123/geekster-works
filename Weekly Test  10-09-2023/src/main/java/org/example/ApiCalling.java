@@ -10,9 +10,11 @@ public class ApiCalling {
     @Autowired
     car carname;
 
+
+
     @GetMapping("api/car/name")
     public car getCar(){
-        MailHandler.sendMail();
+        MailHandler.sendMail(carname.getCarName());
         return carname;
     }
 
