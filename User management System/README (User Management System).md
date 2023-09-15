@@ -16,11 +16,11 @@ This project, named "User Management System" is a robust Spring Boot application
 
 The Controller layer is responsible for handling incoming HTTP requests and delegating them to the appropriate services. It defines API endpoints for the following operations:
 
-1. **Add User:** `POST /api/user`
-2. **Get All Users:** `GET /all/user`
-3. **Get User by ID:** `GET /api/user/{id}/detail`
-4. **Update User Id, Name, Number:** `PUT /user/api/user/{id}/number/`
-5. **Delete User by ID:** `DELETE /api/user/{id}/id`
+1. **Add User:** `POST /addUser`
+2. **Get All Users:** `GET /getAllUser`
+3. **Get User by ID:** `GET /getUser/{userid}`
+4. **Update User Address, PhoneNumber:** `PUT /updateUserInfo/{updateInfo}`
+5. **Delete User by ID:** `deleteUser`
 
 ```java
 @RestController
