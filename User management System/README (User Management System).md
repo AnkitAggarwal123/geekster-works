@@ -24,31 +24,66 @@ The Controller layer is responsible for handling incoming HTTP requests and dele
 
 ```java
 @RestController
-public class ApiCalling {
-    @Autowired
-    List<User> userList;
+public class UserApiCalling {
 
-    //adduser
-    @PostMapping("api/user")
-    public String addUser(@RequestBody User user){
-        userList.add(user);
-        return "User added";
+    @Autowired
+    List<User> users;
+
+
+    @PostMapping("addUser")
+    public String addUser(@RequestBody User data){
+
+        users.add(data);
+        return "Added Successfully";
     }
 
-    //getUser/userid
-    // User Doubt
-    @GetMapping("api/user/{id}/detail")
-    public User getUser(@PathVariable Integer id)
-    {
-        for(User user : userList){
-            if(user.getUserId().equals(id))
-            {
-             return user;
+    @GetMapping("getUser/{userid}")
+    public User getUsers(@PathVariable int userid){
+
+        for(User user : users){
+            if(user.getUserId().equals(userid)){
+                return user;
             }
         }
         return null;
+
     }
-    //...
+
+    @GetMapping("getAllUser")
+    public List<User> getAllUser(){
+        return users;
+    }
+
+    @PutMapping("updateUserInfo/{updateInfo}")
+    public String update(@PathVariable Integer updateInfo,@RequestBody  User updateUser){
+
+        for(User user1 : users){
+            if(user1.getUserId().equals(updateInfo)){
+                user1.setAddress(updateUser.getAddress());
+                user1.setPhoneNumber(updateUser.getPhoneNumber());
+                return "updated" + user1.getUserId();
+            }
+
+        }
+
+        return "Invalid";
+
+    }
+
+    @DeleteMapping("deleteUser")
+    public String delete(@RequestParam Integer user){
+
+        for(User user1 : users){
+            if(user1.getUserId().equals(user)){
+                users.remove(user1);
+                return "delete successfully";
+            }
+        }
+        return "invalid";
+
+    }
+
+
 }
 ```
 
