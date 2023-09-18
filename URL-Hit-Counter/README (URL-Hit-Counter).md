@@ -34,7 +34,6 @@
 <!-- Usage -->
 ## Usage
 - Access the application at `http://localhost:8080`.
-- Use the provided API endpoints to manage your User Management.
 
 ### Controller:
 - It consists of a class named APIController which basically controls the flow of data.
@@ -53,7 +52,7 @@
 
 <!-- Contact -->
 ## Contact
-For questions or feedback, please contact : Mrinal   
+For questions or feedback, please contact : Ankit Aggarwal  
 - Maild Id : kuldeepaggarwal305@gmail.com
 
 <h1 align="center">Thank You...<h1>
