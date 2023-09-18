@@ -1,10 +1,10 @@
 #### weeklyTest3
-# <h1 align = "center"> Restaurant ModelUsing Spring_Boot </h1>
+# <h1 align = "center"> UrlHit Application </h1>
 
 
 <!-- Project Description -->
 ## Overview
-<p align="center">This project, named "Restaurant Model," is a robust Spring Boot application designed for managing user data efficiently. It provides a set of API endpoints that allow you to perform various operations on user records, such as adding, retrieving, updating, and deleting user information. 
+<p align="center">This Spring Boot application provides a RESTful API for tracking URL hits.
 </p>
 
 <!-- Table of Contents -->
@@ -25,17 +25,11 @@
 - Maven
 - Spring Web Dependency
 - Lombok
-- Validation
 
 
 <!-- Key Features -->
 ## Key Features
-- Add Restaurant
-- Add List of Restaurant
-- Get All Restaurant
-- Get Restaurant Details By RestaurantId
-- Delete Restaurant By RestaurantId.
-- Update Restaurant by RestaurantId
+- Track Hit Api.
 
 <!-- Usage -->
 ## Usage
@@ -49,25 +43,8 @@
 
 ### API Reference
 
-#### Add Restaurant :
-POST Method :  http://localhost:8080/restaurant
-
-#### Add List Restaurant :
-POST Method :  http://localhost:8080/list/rest
-
-#### Get All Restaurant :
- - GET Method : http://localhost:8080/allList
-
- #### GET Restaurant By ID :
- - GET Method :   http://localhost:8080/find/detail/by/{id}
-
- #### DELETE Restaurant :
- - DELETE Method :   http://localhost:8080/del/{id}/Rest
-
-  #### Update Restaurant Details :
- - PUT Method :   http://localhost:8086/change/restaurant
-
-
+#### Get count :
+ - GET Method : http://localhost:8080/count
 
 
  <!-- Acknowledgments -->
