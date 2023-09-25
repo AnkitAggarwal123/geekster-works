@@ -1,4 +1,4 @@
-# <h1 align = "center"> User Management System Using Spring_Boot </h1>
+# <h1 align = "center"> Job Search Portal </h1>
 ___ 
 <p align="center">
 <a href="Java url">
@@ -108,8 +108,8 @@ public class JobController {
 
 <!-- Contact -->
 ## Contact
-For questions or feedback, please contact : Mrinal Gautam 
-- Maild Id : mmrinalGautam1999@gmail.com
+For questions or feedback, please contact : Ankit Aggarwal
+- Maild Id : kuldeepaggarwal305@gmail.com
 
 <h1 align="center">Thank You...<h1>
 <h3 align = "center"> ***********************************************************<h3>
