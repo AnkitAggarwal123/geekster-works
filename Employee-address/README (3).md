@@ -1,4 +1,4 @@
-# <h1 align = "center"> E-Commerce Application Using Spring_Boot </h1>
+# <h1 align = "center"> Employee address </h1>
 ___ 
 <p align="center">
 <a href="Java url">
@@ -18,7 +18,7 @@ ___
 
 <!-- Project Description -->
 ## Overview
-<p align="center">This project, named "E-Commerce Application" is a robust Spring Boot application designed for managing user data efficiently. It provides a set of API endpoints that allow you to perform various operations on user records, such as adding, retrieving, updating, and deleting user information. 
+<p align="center">This project, named "Employee address" is a robust Spring Boot application designed for managing user data efficiently. It provides a set of API endpoints that allow you to perform various operations on user records, such as adding, retrieving, updating, and deleting user information. 
 </p>
 
 <!-- Table of Contents -->
@@ -45,18 +45,17 @@ ___
 
 <!-- Key Features -->
 ## Key Features
-- Add List of products
-- Add List of Users
-- Add List of Addresses
-- Place order
-- Get Order by OrderId
-- Delete  products
-- Delete Order By Id
+- Add Employee
+- Add Address
+- Update Employee
+- Get Employee
+- Delete  Address
+- Delete Employee By Id
 
 <!-- Usage -->
 ## Usage
 - Access the application at `http://localhost:8080/swagger-ui/index.html#/`.
-- Use the provided API endpoints to manage your University Event Management System.
+- Use the provided API endpoints to manage your Employee-address system.
 
 ### Controller:
 - It consists of a class named APIController which basically controls the flow of data.
