@@ -24,11 +24,6 @@ public class Course {
     private String duration;
 
     @ManyToMany
-    @JoinTable(
-    name = "course_Student_Mapping",
-    joinColumns = @JoinColumn(name = "Course_fk"),
-    inverseJoinColumns = @JoinColumn(name = "Student_fk")
-    )
     List<Student> studentSet;
 
 }

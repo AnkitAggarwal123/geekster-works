@@ -31,8 +31,8 @@ public class Student {
     @JoinColumn(name = "Address_fk")
     Address address;
 
-    @OneToMany
-    @JoinColumn(name = "CourseSet_fk")
-    List<Course> courses;
+//    @OneToMany
+//    @JoinColumn(name = "CourseSet_fk")
+//    List<Course> courses;
 
 }
