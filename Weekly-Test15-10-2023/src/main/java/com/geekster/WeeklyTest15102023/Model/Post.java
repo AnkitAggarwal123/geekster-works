@@ -21,7 +21,7 @@ public class Post {
     private Timestamp updateTime;
     private String postData;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne
     @JoinColumn(name = "user_fk")
     User user;
 }

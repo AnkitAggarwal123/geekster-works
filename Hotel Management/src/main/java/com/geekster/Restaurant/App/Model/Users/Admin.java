@@ -1,28 +1,31 @@
-package com.geekster.WeeklyTest15102023.Model;
+package com.geekster.Restaurant.App.Model.Users;
+
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.Pattern;
+import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Entity
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
-public class User {
+@NoArgsConstructor
+@Entity
+public class Admin {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
-    @NotBlank
-    private String firstName;
-    private String lastName;
-    private Integer age;
-    private String email;
+    private Integer adminId;
+
+
+    private String adminEmail;
+
+
     private String password;
-    private String phoneNumber;
+
 }

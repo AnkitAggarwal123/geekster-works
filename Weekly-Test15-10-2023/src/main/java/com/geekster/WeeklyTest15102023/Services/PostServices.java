@@ -18,9 +18,7 @@ public class PostServices {
 
     public Post getPOstById(Integer id) {
 
-
-        Post newPost = post.findById(id).get();
-        return newPost;
+        return post.findById(id).orElseThrow();
 
     }
 }
